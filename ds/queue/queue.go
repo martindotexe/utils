@@ -1,5 +1,7 @@
 package queue
 
+import "iter"
+
 type Queue struct {
 	rear   *node
 	front  *node
@@ -45,4 +47,16 @@ func (queue *Queue) Peek() any {
 
 func (queue *Queue) Len() int {
 	return queue.length
+}
+
+func (queue *Queue) Items() iter.Seq2[int, any] {
+	return func(yield func(int, any) bool) {
+		n := queue.front
+		for i := 0; i < queue.length; i++ {
+			if !yield(i, n.value) {
+				return
+			}
+			n = n.next
+		}
+	}
 }

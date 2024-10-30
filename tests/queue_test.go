@@ -1,6 +1,7 @@
 package tests
 
 import (
+	"fmt"
 	"testing"
 
 	"martindotexe/utils/ds/queue"
@@ -33,4 +34,24 @@ func TestQueue(t *testing.T) {
 	assert.Nil(t, q.Dequeue())
 	assert.Nil(t, q.Dequeue())
 	assert.Zero(t, q.Len())
+}
+
+func TestIterQueue(t *testing.T) {
+	s1 := queue.New()
+
+	s1.Enqueue("1")
+	s1.Enqueue("2")
+	s1.Enqueue("3")
+
+	for i, n := range s1.Items() {
+		assert.Equal(t, fmt.Sprintf("%d", i+1), n)
+	}
+
+	s2 := queue.New()
+
+	for _, n := range s2.Items() {
+		assert.Nil(t, n)
+		assert.Zero(t, n)
+		fmt.Print("Should not print")
+	}
 }
