@@ -1,5 +1,7 @@
 package stack
 
+import "iter"
+
 type Stack struct {
 	top    *node
 	length int
@@ -43,4 +45,16 @@ func (stack *Stack) Peek() any {
 
 func (stack *Stack) IsEmpty() bool {
 	return stack.length == 0
+}
+
+func (stack *Stack) Items() iter.Seq2[int, any] {
+	return func(yield func(int, any) bool) {
+		n := stack.top
+		for i := 0; i < stack.length; i++ {
+			if !yield(i, n.value) {
+				return
+			}
+			n = n.prev
+		}
+	}
 }

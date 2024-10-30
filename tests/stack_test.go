@@ -1,6 +1,7 @@
 package tests
 
 import (
+	"fmt"
 	"testing"
 
 	"martindotexe/utils/ds/stack"
@@ -32,4 +33,24 @@ func TestStack(t *testing.T) {
 	assert.Nil(t, s.Pop(), "Stack pop value should be nil when empty")
 	assert.Nil(t, s.Peek(), "Stack peek value should be nil when empty")
 	assert.Equal(t, 0, s.Len(), "Stack should be empty")
+}
+
+func TestIterStack(t *testing.T) {
+	s1 := stack.New()
+
+	s1.Push("3")
+	s1.Push("2")
+	s1.Push("1")
+
+	for i, n := range s1.Items() {
+		assert.Equal(t, fmt.Sprintf("%d", i+1), n)
+	}
+
+	s2 := stack.New()
+
+	for _, n := range s2.Items() {
+		assert.Nil(t, n)
+		assert.Zero(t, n)
+		fmt.Print("Should not print")
+	}
 }
