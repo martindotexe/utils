@@ -1,6 +1,9 @@
-[![Tests](https://github.com/martindotexe/utils/actions/workflows/go.yml/badge.svg)](https://github.com/martindotexe/utils/actions/workflows/go.yml)
-
 # Utility features for Go
+
+[![Tests](https://github.com/martindotexe/utils/actions/workflows/go.yml/badge.svg)](https://github.com/martindotexe/utils/actions/workflows/go.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/martindotexe/utils)](https://goreportcard.com/report/github.com/martindotexe/utils)
+[![Go Reference](https://pkg.go.dev/badge/github.com/martindotexe/utils.svg)](https://pkg.go.dev/github.com/martindotexe/utils)
+![GitHub License](https://img.shields.io/github/license/martindotexe/utils)
 
 This my tiny utility package with a few data structures. More handy
 functions come as i need them. 
