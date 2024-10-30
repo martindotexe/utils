@@ -4,8 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"martindotexe/utils/ds/queue"
-
+	"github.com/martindotexe/utils/ds/queue"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -1,4 +1,4 @@
-module martindotexe/utils
+module github.com/martindotexe/utils
 
 go 1.23.2
 
