@@ -1,4 +1,7 @@
 [![Tests](https://github.com/martindotexe/utils/actions/workflows/go.yml/badge.svg)](https://github.com/martindotexe/utils/actions/workflows/go.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/martindotexe/utils)](https://goreportcard.com/report/github.com/martindotexe/utils)
+[![Go Reference](https://pkg.go.dev/badge/github.com/martindotexe/utils.svg)](https://pkg.go.dev/github.com/martindotexe/utils)
+![GitHub License](https://img.shields.io/github/license/martindotexe/utils)
 
 # Utility features for Go
 
