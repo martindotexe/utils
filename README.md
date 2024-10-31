@@ -23,3 +23,4 @@ that solves your problems:
 
 - Full featured package with plenty of ds: https://github.com/emirpasic/gods
 - Learning resource for ds: https://github.com/TheAlgorithms/Go
+- Popular functional package: https://github.com/thoas/go-funk
