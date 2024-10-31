@@ -13,6 +13,11 @@ functions come as i need them.
 - Stack
 - Queue
 
+## Iterators
+
+- Chainable iterators in the `itc` package.
+- `it` package with map, filter, fold, reverse etc.
+
 ## More to come
 
 There are plenty of utility and data structure packages out there.
@@ -23,4 +28,5 @@ that solves your problems:
 
 - Full featured package with plenty of ds: https://github.com/emirpasic/gods
 - Learning resource for ds: https://github.com/TheAlgorithms/Go
+- Really good functional package. Got some inspiration from here: https://github.com/BooleanCat/go-functional
 - Popular functional package: https://github.com/thoas/go-funk
