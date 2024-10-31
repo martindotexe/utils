@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/require"
 )
 
-func MapTest(t *testing.T) {
+func TestMap(t *testing.T) {
 	var nums string
 	for v := range it.Map(slices.Values([]int{1, 2, 3}), strconv.Itoa) {
 		nums += v
@@ -19,7 +19,7 @@ func MapTest(t *testing.T) {
 	assert.Equal(t, "123", nums)
 }
 
-func MapErrorTest(t *testing.T) {
+func TestMapError(t *testing.T) {
 	nums := []int{}
 
 	for v, err := range it.MapError(slices.Values([]string{"1", "2", "3"}), strconv.Atoi) {

@@ -9,7 +9,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func FilterTest(t *testing.T) {
+func TestFilter(t *testing.T) {
 	even := []int{2, 4, 6}
 	compare := []int{}
 
