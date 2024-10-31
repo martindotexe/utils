@@ -2,7 +2,7 @@ package it
 
 import "iter"
 
-func Filter[T any](i func(func(T) bool), f func(T) bool) iter.Seq[T] {
+func Filter[T any](i iter.Seq[T], f func(T) bool) iter.Seq[T] {
 	return func(yield func(T) bool) {
 		for value := range i {
 			if f(value) {
@@ -14,7 +14,7 @@ func Filter[T any](i func(func(T) bool), f func(T) bool) iter.Seq[T] {
 	}
 }
 
-func Exclude[T any](i func(func(T) bool), f func(T) bool) iter.Seq[T] {
+func Exclude[T any](i iter.Seq[T], f func(T) bool) iter.Seq[T] {
 	return Filter(i, not(f))
 }
 

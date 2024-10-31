@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestFilters(t *testing.T) {
+func TestFilter(t *testing.T) {
 	assert.True(t, filter.IsEven(uint8(2)))
 	assert.True(t, filter.IsEven(int16(-2)))
 	assert.False(t, filter.IsEven(int32(2147483647)))
