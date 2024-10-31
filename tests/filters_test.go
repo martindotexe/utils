@@ -3,7 +3,7 @@ package tests
 import (
 	"testing"
 
-	"github.com/martindotexe/utils/filter"
+	"github.com/martindotexe/utils/it/filter"
 	"github.com/stretchr/testify/assert"
 )
 

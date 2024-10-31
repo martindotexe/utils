@@ -4,7 +4,7 @@ import (
 	"slices"
 	"testing"
 
-	"github.com/martindotexe/utils/filter"
+	"github.com/martindotexe/utils/it/filter"
 	"github.com/martindotexe/utils/it/itc"
 	"github.com/stretchr/testify/assert"
 )
